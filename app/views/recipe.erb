@@ -1,0 +1,11 @@
+<% if @recipe_query %>
+  <h3> Name: <%= @recipe_query.name %></h3>
+  <br>
+  <h3> Ingredients: <%= @recipe_query.ingredients %></h3>
+  <br>
+  <h3> Cooking Time (minutes): <%= @recipe_query.cook_time %></h3>
+  <br>
+<% else %>
+  <h2> You need to submit a recipe name or id to use this route.</h2>
+  <a href="/allrecipes">Click here to view all recipes.</a>
+<% end %>
